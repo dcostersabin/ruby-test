@@ -1,6 +1,7 @@
 module Testing
   def Testing.setup(params)
-    print(params)
-    return "hello World" + params;  
+    arr = params.split(',')
+    arr.map!(&:to_i)
+    return arr.sort
   end
 end

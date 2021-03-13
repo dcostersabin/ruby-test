@@ -2,7 +2,7 @@ module Testing
   def Testing.setup(params)
     arr = params.split(',')
     arr.map!(&:to_i)
-    return arr.sort
+    arr.sort!
+    return arr * ","
   end
 end
-
